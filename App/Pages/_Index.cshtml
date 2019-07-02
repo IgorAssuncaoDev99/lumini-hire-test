@@ -1,0 +1,69 @@
+﻿@page
+@{
+    ViewData["Title"] = "Blog Simples";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Full featured and highly customizable cross-platform ASP.NET Core blogging application">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="~/home/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/home/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/home/css/styles.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a class="navbar-brand" href="~/blog"><img src="~/home/img/logo.png" alt="Blogifier"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="~/blog">Blog</a></li>
+                        <li class="nav-item download-link ml-lg-auto"><a class="nav-link" href="https://github.com/blogifierdotnet/blogifier/" target="_blank">Download</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container content">
+           <div class="owl-carousel slider slider-lg">
+            <figure>
+                <img src="~/home/img/01.jpg" alt="Editor - Blogifier Version 1.5" />
+                <figcaption>Editor - Blog Version 1.5</figcaption>
+            </figure>
+            <figure>
+                <img src="~/home/img/02.jpg" alt="Posts List" />
+                <figcaption>Post List Style</figcaption>
+            </figure>
+            <figure>
+                <img src="~/home/img/03.jpg" alt="Post Grid" />
+                <figcaption>Post Grid Style</figcaption>
+            </figure>
+            <figure>
+                <img src="~/home/img/04.jpg" alt="Widgets" />
+                <figcaption>Widgets</figcaption>
+            </figure>
+            <figure>
+                <img src="~/home/img/05.jpg" alt="Widget Settings" />
+                <figcaption>Widget Settings</figcaption>
+            </figure>
+            <figure>
+                <img src="~/home/img/06.jpg" alt="Settings" />
+                <figcaption>Settings</figcaption>
+            </figure>
+        </div>
+    </section>
+    
+    <script src="~/home/js/jquery-3.2.1.min.js"></script>
+    <script src="~/home/js/popper.min.js"></script>
+    <script src="~/home/js/bootstrap.min.js"></script>
+    <script src="~/home/js/owl.carousel.min.js"></script>
+    <script src="~/home/js/custom.js"></script>
+</body>
+</html>
